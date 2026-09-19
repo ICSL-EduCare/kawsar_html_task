@@ -1,8 +1,10 @@
-body {
-  counter-reset: section;
+<style>
+p {
+  color: blue;
+  font-size: 20px;
 }
+</style>
 
-h2::before {
-  counter-increment: section;
-  content: "Section " counter(section) ": ";
-}
+<body>
+<p>This is a paragraph with some <strong>important</strong> text.</p>
+</body
