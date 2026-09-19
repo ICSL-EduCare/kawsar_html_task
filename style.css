@@ -1,6 +1,19 @@
-<div class="flex-container">
-  <div style="order: 3">1</div>
-  <div style="order: 2">2</div>
-  <div style="order: 4">3</div>
-  <div style="order: 1">4</div>
-</div>
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Make a one column-layout instead of three-column layout */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
